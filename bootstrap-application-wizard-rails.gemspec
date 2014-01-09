@@ -7,15 +7,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Integrate Bootstrap Application Wizard with the Rails asset pipeline}
 
   gem.executables   = []
-  gem.files         = []
-  gem.files        << 'lib/bootstrap-application-wizard-rails.rb'
-  gem.files        << 'lib/bootstrap-application-wizard-rails/version.rb'
-  gem.files        << 'lib/bootstrap-application-wizard-rails/engine.rb'
-  gem.files        << 'lib/bootstrap-application-wizard-rails/railtie.rb'
-  gem.files        << 'vendor/assets/javascripts/bootstrap-wizard.js'
-  gem.files        << 'vendor/assets/stylesheets/bootstrap-wizard.css'
-  gem.files        << 'vendor/assets/javascripts/bootstrap-application-wizard-rails.js'
-  gem.files        << 'vendor/assets/stylesheets/bootstrap-application-wizard-rails.scss'
+  gem.files         = Dir.glob("{lib,vendor}/**/*")
   gem.test_files    = []
   gem.name          = 'bootstrap-application-wizard-rails'
   gem.require_paths = ['lib']
